@@ -10,11 +10,13 @@
     <link rel="stylesheet" href="cssstyle.css">
     <style>
         body {
+            background-image: url("jojiwall.jpg");
+        }
+        body {
             font-family: 'Kanit', sans-serif
         }
 
         .headercs {
-            font-size: 60px;
             background-color: darkblue;
             height: 100px;
         }
@@ -27,20 +29,83 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            
+            color: honeydew;
+
         }
+
+        .column {
+            float: left;
+            width: 0%;
+        }
+
+        .button {
+            background-color: mediumturquoise;
+            border: none;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 30px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .topnav {
+            overflow: hidden;
+        }
+
+        a:hover,
+        a:active {
+            background-color: cadetblue;
+            color: gold;
+        }
+
+        .gg {
+            float: right;
+
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        
     </style>
 
 
 </head>
 
 <body>
-    <div>
-
-        <img src="logo.png" width="250px">
-        <div class="center headercs">Write Read Buy</div>
+    <div class="column">
+        <a href="http://127.0.0.1:5500/public/index.html"target=""> <img src="logo.png" width="220px"></a>
 
     </div>
+
+    <div class="center headercs">
+        <div class="center topnav">
+            <a href="#" class="button">Write</a>
+            <a href="#" class="button">Read</a>
+            <a href="#" class="button">Buy</a>
+        </div>
+    </div>
+    <div class="gg">
+        <!--ค้นหาโดย Google-->
+        <form method="GET" action="http://www.google.co.th/custom" target="_blank">
+            <table cellspacing="3">
+                <tr>
+                    <td align="center">
+                        <input type="hidden" name="hl" value="th"><input type="text" name="q" size="20" maxlength="255">
+                        <input type="submit" name="btnG" VALUE="ค้นหา.">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+
 
 </body>
 
