@@ -7,18 +7,23 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,500;1,100;1,300&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="cssstyle.css">
+    <link rel="stylesheet" href="css/cssstyle.css">
     <style>
-        body {
-            background-image: url("jojiwall.jpg");
-        }
         body {
             font-family: 'Kanit', sans-serif
         }
+        .effect{
+            text-shadow:2px 2px 10px white;
+        }
+
+        body {
+            background-image: url(jojiwall.jpg)
+        }
 
         .headercs {
-            background-color: darkblue;
+            background-color:;
             height: 100px;
+            border-radius: 10px;
         }
 
         .content {
@@ -36,12 +41,14 @@
         .column {
             float: left;
             width: 0%;
+            
+            
         }
 
         .button {
-            background-color: mediumturquoise;
+            background-color: royalblue;
             border: none;
-            color: black;
+            color: white;
             padding: 15px 32px;
             text-align: center;
             text-decoration: none;
@@ -49,48 +56,159 @@
             font-size: 30px;
             margin: 4px 2px;
             cursor: pointer;
+            border-radius: 20px;
+        }
+
+        a.menu:hover,
+        a:active {
+            background-color: cadetblue;
+            color: gold;
         }
 
         .topnav {
             overflow: hidden;
         }
 
-        a:hover,
-        a:active {
-            background-color: cadetblue;
-            color: gold;
-        }
+
 
         .gg {
             float: right;
 
         }
 
+
+        /* Create two unequal columns that floats next to each other */
+        /* Left column */
+        .leftcolumn {
+            float: left;
+            width: 75%;
+            margin: 10px;
+            
+
+
+
+        }
+
+        /* Right column */
+        .rightcolumn {
+            float: right;
+            width: 23%;
+            
+        }
+
+        /* Fake image */
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Add a card effect for articles */
+        .card {
+            background-color:royalblue;
+            padding: 10px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+
+        }
+
+        /* Clear floats after the columns */
         .row:after {
             content: "";
             display: table;
             clear: both;
         }
 
-        
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+
+        a.one:link {
+            text-decoration: none;
+        }
+
+        a.one:visited {
+            text-decoration: none;
+        }
+
+        a.one:hover {
+            text-decoration: underline;
+            color: goldenrod;
+        }
+
+        a.one:active {
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        table,
+        td,
+        th {
+            border: 2px solid whitesmoke;
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            padding: 15px;
+        }
+
+        .tex{
+            color:  black;
+        }
     </style>
 
 
 </head>
 
 <body>
+
     <div class="column">
-        <a href="http://127.0.0.1:5500/public/index.html"target=""> <img src="logo.png" width="220px"></a>
+        <a href="http://127.0.0.1:5500/public/index.html" target=""> <img src="logo.png" width="220px"></a>
 
     </div>
 
-    <div class="center headercs">
-        <div class="center topnav">
+
+
+    <div class="center headercs ">
+        <div class="center topnav ">
             <a href="#" class="button">Write</a>
             <a href="#" class="button">Read</a>
-            <a href="#" class="button">Buy</a>
+            <a href="#" class="button">Login/Sign-up</a>
         </div>
     </div>
+
     <div class="gg">
         <!--ค้นหาโดย Google-->
         <form method="GET" action="http://www.google.co.th/custom" target="_blank">
@@ -103,7 +221,71 @@
                 </tr>
             </table>
         </form>
-    </div>
+    </div><br>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2 class="effect">หัวข้อที่น่าสนใจ</h2>
+                <p><b><a class="one tex" href="#"
+                            target="_blank">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</a></b>
+                </p>
+                <p><b><a class="one tex" href="#"
+                            target="_blank">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</a></b>
+                </p>
+                <p><b><a class="one tex" href="#"
+                            target="_blank">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</a></b>
+                </p>
+                <p><b><a class="one tex" href="#"
+                            target="_blank">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</a></b>
+                </p>
+                <p><b><a class="one tex" href="#"
+                            target="_blank">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</a></b>
+                </p>
+                <p><b><a class="one tex" href="#"
+                            target="_blank">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</a></b>
+                </p>
+                <p><b><a class="one tex" href="#"
+                            target="_blank">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</a></b>
+                </p>
+            
+            </div>
+            <div class="card">
+                <h2 class="effect">ประเภทของหัวข้อ</h2>
+                <table>
+                    <tr>
+                        <th>การ์ตูน</th>
+                        <th>นิยาย</th>
+                        <th>มังงะ</th>
+                    </tr>
+                    <tr>
+                        <th>มังฮวา</th>
+                        <th>เกม</th>
+                        <th>เพลง</th>
+                    </tr>
+                    <tr>
+                        <th>การเมือง</th>
+                        <th>การเงิน</th>
+                        <th>เหนือธรรมชาติ</th>
+                    </tr>
+                    <tr>
+                        <th>วิชาการ</th>
+                        <th>คอมพิวเตอร์</th>
+                        <th>วิทยาศาสตร์</th>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
+        <div class="rightcolumn">
+            <div class="card">
+                <h2 class="effect">ช่องทางต่างๆ </h2>
+                <p>Facebook : ReadAround</p>
+                <p>Twitter : Read_Around</p>
+                <p>Line : @ReadAround</p>
+                <p>Youtube : ReadAround_Official</p>
+            </div>
 
 
 
